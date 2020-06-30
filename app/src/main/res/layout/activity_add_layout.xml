@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewNameActAdd"
+            style="@style/TextViewTheme"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view_name_act_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.040"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <EditText
+            android:id="@+id/editTextNameActAdd"
+            style="@style/EditTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="44sp"
+            android:hint="@string/text_view_name_act_add"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toEndOf="@+id/textViewNameActAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <ImageButton
+            android:id="@+id/imageButtonNameActAdd"
+            style="@style/ImageButtonTheme"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="@string/img_btn_cancel_act_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/editTextNameActAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065"
+            app:srcCompat="@drawable/ic_close" />
+
+
+        <TextView
+            android:id="@+id/textViewAgeActAdd"
+            style="@style/TextViewTheme"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view_age_act_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.040"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNameActAdd"
+            app:layout_constraintVertical_bias="0.040" />
+
+        <EditText
+            android:id="@+id/editTextAgeActAdd"
+            style="@style/EditTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="44sp"
+            android:autofillHints="0"
+            android:ems="10"
+            android:hint="@string/text_view_age_act_add"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toEndOf="@+id/textViewAgeActAdd"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNameActAdd"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAgeActAdd"
+            style="@style/ImageButtonTheme"
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:contentDescription="@string/img_btn_cancel_act_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/editTextAgeActAdd"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonNameActAdd"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@drawable/ic_close" />
+
+        <Button
+            android:id="@+id/btnConfirmActAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="124dp"
+
+            android:background="#FFD180"
+            android:fontFamily="casual"
+            android:padding="10sp"
+            android:text="Подтвердить"
+
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerAddAct"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <TextView
+            android:id="@+id/textViewGender"
+            style="@style/TextViewTheme"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.040"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAgeActAdd"
+            app:layout_constraintVertical_bias="0.040" />
+
+        <Spinner
+            android:id="@+id/spinnerAddAct"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingEnd="16dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toEndOf="@+id/textViewGender"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAgeActAdd"
+            app:layout_constraintVertical_bias="0.022" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

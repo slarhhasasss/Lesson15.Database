@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lesson 15. Database</string>
+    <string name="text_view_name_act_add">Name</string>
+    <string name="img_btn_cancel_act_add">Cancel</string>
+    <string name="text_view_age_act_add">Age</string>
+</resources>

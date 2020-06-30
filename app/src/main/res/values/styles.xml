@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextViewTheme">
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+    <style name="EditTextTheme">
+        <item name="android:layout_height">70sp</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="ImageButtonTheme">
+        <item name="chipIconSize">70sp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BtnTheme">
+
+    </style>
+
+</resources>

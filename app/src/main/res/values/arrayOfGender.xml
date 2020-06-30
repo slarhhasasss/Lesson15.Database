@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayOfGender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>TransGender</item>
+        <item>Not stated yet</item>
+    </string-array>
+</resources>
